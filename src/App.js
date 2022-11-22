@@ -5,10 +5,10 @@ import {TodoList} from './TodoList';
 import {TodoSearch} from './TodoSearch';
 import { CreateTodoButton } from './CreateTodoButton';
 
-import './App.css';
+// import './App.css';
 
 const todos = [
-  {text:"Cortar cebolla", completed: false},
+  {text:"Cortar cebolla", completed: true},
   {text:"Tomar cafe", completed: false},
   {text:"mirar el mundial", completed: false},
 ]
@@ -17,11 +17,17 @@ function App() {
     <Fragment>
         <TodoCounter />  
         <TodoSearch />
+
         <TodoList>
           {todos.map(todo =>(
-            <TodoItem key={todo.text} text={todo.text}/>
+            <TodoItem
+             key={todo.text}
+             text={todo.text}
+             completed={todo.completed}
+             />
           ))}
         </TodoList>
+
         <CreateTodoButton />
     </Fragment>
   );

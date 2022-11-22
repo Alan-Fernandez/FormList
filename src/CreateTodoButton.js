@@ -1,9 +1,19 @@
 import React, { Fragment } from "react";
+import "./CreateTodoButton.css"
 
-const CreateTodoButton =()=>{
+const CreateTodoButton =(props)=>{
+
+    const onClickButton = (msj)=>{
+        alert(msj)
+    }
     return(
         <Fragment>
-            <button>+</button>
+            <button 
+                className="CreateTodoButton"
+                onClick={()=>onClickButton('Hello world')}
+            >
+                +
+            </button>
         </Fragment>
     );
 };
