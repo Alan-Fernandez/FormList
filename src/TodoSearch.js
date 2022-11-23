@@ -1,19 +1,22 @@
-import React, { Fragment } from "react";
-import "./TodoSearch.css"
+import React from "react";
+import "./TodoSearch.css" ;
 
-const TodoSearch =()=>{
-    const onSearchValueChange=(event)=>{
-        console.log(event)
+
+
+function TodoSearch({searchValue, setSearchValue}) {
+
+    const onSearchValueChange = (event) => {
+      setSearchValue(event.target.value);
     };
     
-    return(
-        <Fragment>
-             <input 
-                className="TodoSearch"     placeholder="Cebolla" 
-                onChange={onSearchValueChange}
-             />
-        </Fragment>
+    return (
+      <input
+        className="TodoSearch"
+        placeholder="Cebolla"
+        value={searchValue}
+        onChange={onSearchValueChange }
+      />
     );
-};
+  }
 
 export {TodoSearch};
