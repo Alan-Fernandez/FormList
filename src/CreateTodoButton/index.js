@@ -3,14 +3,14 @@ import "./CreateTodoButton.css"
 
 const CreateTodoButton =(props)=>{
 
-    const onClickButton = (msj)=>{
-        alert(msj)
+    const onClickButton = ()=>{
+        props.setOpenModal(true);
     }
     return(
         <Fragment>
             <button 
-                className="CreateTodoButton"
-                onClick={()=>onClickButton('Hello world')}
+               className="CreateTodoButton"
+               onClick={onClickButton}
             >
                 +
             </button>
