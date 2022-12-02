@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FormList/static/css/main.93efbed4.css",
+    "main.js": "/FormList/static/js/main.04e276ce.js",
+    "index.html": "/FormList/index.html",
+    "main.93efbed4.css.map": "/FormList/static/css/main.93efbed4.css.map",
+    "main.04e276ce.js.map": "/FormList/static/js/main.04e276ce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93efbed4.css",
+    "static/js/main.04e276ce.js"
+  ]
+}
