@@ -7,7 +7,7 @@ const TodoCounter=()=>{
 
     return(
         <Fragment>
-            <h2 className="TodoCounter"> Has complentado {completedTodos} de {totalTodos} ToDos</h2> 
+            <h1 className="TodoCounter"> Todos complentado <br/> {completedTodos} de {totalTodos}</h1> 
         </Fragment>
     )
 };
